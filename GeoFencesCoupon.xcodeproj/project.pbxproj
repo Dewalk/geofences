@@ -13,6 +13,8 @@
 		DD42ED431E2453670025B679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD42ED411E2453670025B679 /* Main.storyboard */; };
 		DD42ED451E2453670025B679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD42ED441E2453670025B679 /* Assets.xcassets */; };
 		DD42ED481E2453670025B679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD42ED461E2453670025B679 /* LaunchScreen.storyboard */; };
+		DD42ED501E2453740025B679 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD42ED4F1E2453740025B679 /* MapKit.framework */; };
+		DD94E0361E24A70E0019DD6E /* geoFences.gpx in Resources */ = {isa = PBXBuildFile; fileRef = DD94E0351E24A70E0019DD6E /* geoFences.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DD42ED441E2453670025B679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD42ED471E2453670025B679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD42ED491E2453670025B679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD42ED4F1E2453740025B679 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DD94E0351E24A70E0019DD6E /* geoFences.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = geoFences.gpx; path = ../../geoFences.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD42ED501E2453740025B679 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 		DD42ED2C1E2453660025B679 = {
 			isa = PBXGroup;
 			children = (
+				DD94E0351E24A70E0019DD6E /* geoFences.gpx */,
+				DD42ED4F1E2453740025B679 /* MapKit.framework */,
 				DD42ED371E2453670025B679 /* GeoFencesCoupon */,
 				DD42ED361E2453670025B679 /* Products */,
 			);
@@ -137,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD42ED481E2453670025B679 /* LaunchScreen.storyboard in Resources */,
+				DD94E0361E24A70E0019DD6E /* geoFences.gpx in Resources */,
 				DD42ED451E2453670025B679 /* Assets.xcassets in Resources */,
 				DD42ED431E2453670025B679 /* Main.storyboard in Resources */,
 			);
@@ -269,6 +277,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DEW.GeoFencesCoupon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.3;
 			};
 			name = Debug;
 		};
@@ -280,6 +289,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DEW.GeoFencesCoupon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.3;
 			};
 			name = Release;
 		};
@@ -302,6 +312,7 @@
 				DD42ED4E1E2453670025B679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
